@@ -5,10 +5,11 @@ from openai import OpenAI
 
 class AI_Assistant:
     def __init__(self):
+        #this run voice bot
         aai.settings.api_key = "<AssemblyAI API Key>"
         self.openai_client = OpenAI(api_key = "<OpenAI API Key>")
         self.elevenlabs_api_key = "<ElevenLabs API Key>"
-
+        
         self.elevenlabs_client = ElevenLabs(api_key = self.elevenlabs_api_key)
 
         self.transcriber = None
